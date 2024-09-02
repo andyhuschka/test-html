@@ -24,3 +24,23 @@ main {
   margin: 0 auto;
   padding: 16px;
 }
+
+main > article + article {
+  margin-top: 50px;
+}
+
+a + a {
+  margin-left: 10px;
+}
+
+a {
+  color: green;
+}
+
+a:hover {
+  color: #f0a04b;
+}
+
+a:active {
+  color: blue;
+}
