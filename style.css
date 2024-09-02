@@ -13,6 +13,11 @@ h3 {
   font-family: "Courier New", Courier, monospace;
 }
 
+::selection {
+  background-color: black;
+  color: white;
+}
+
 header {
   text-align: center;
   background-color: #fefbe9;
@@ -29,18 +34,30 @@ main > article + article {
   margin-top: 50px;
 }
 
-a + a {
+header > a + a {
   margin-left: 10px;
 }
 
-a {
+header > a {
   color: green;
 }
 
-a:hover {
+header > a:hover {
   color: #f0a04b;
 }
 
-a:active {
+header > a:active {
+  color: blue;
+}
+
+#Contact a {
+  color: green;
+}
+
+#Contact a:hover {
+  color: #f0a04b;
+}
+
+#Contact a:active {
   color: blue;
 }
