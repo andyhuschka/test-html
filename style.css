@@ -40,6 +40,10 @@ header > a:active {
   color: blue;
 }
 
+header p::after {
+  content: " 💻";
+}
+
 main {
   max-width: 800px;
   margin: 0 auto;
