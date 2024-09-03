@@ -79,3 +79,11 @@ main > article + article {
 #Contact a:active {
   color: blue;
 }
+
+.experience-heading {
+  display: inline-block;
+}
+
+.experience-subheading {
+  display: inline-block;
+}
