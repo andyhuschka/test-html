@@ -4,7 +4,12 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 16px;
+}
+
 body {
+  background-color: whitesmoke;
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
 }
@@ -13,6 +18,11 @@ h1,
 h2,
 h3 {
   font-family: "Courier New", Courier, monospace;
+}
+
+h2 {
+  position: relative;
+  left: -1rem;
 }
 
 ::selection {
@@ -25,11 +35,11 @@ header {
   text-align: center;
   font-weight: bold;
   background-color: #fefbe9;
-  padding: 20px 20px;
+  padding: 1.25rem 1.25rem;
 }
 
 header > a + a {
-  margin-left: 10px;
+  margin-left: 1rem;
 }
 
 header > a {
@@ -50,13 +60,13 @@ header p::after {
 
 .hire-me-badge {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 0.6rem;
+  right: 0.6rem;
   background-color: #183a1d;
   color: #e1eedd;
-  padding: 10px 20px;
+  padding: 0.75rem 1.25rem;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 0.3rem;
   font-weight: bold;
 }
 
@@ -67,25 +77,25 @@ header p::after {
 
 main {
   display: block;
-  max-width: 800px;
+  max-width: 50rem;
   margin: 0 auto;
-  padding: 16px;
+  padding: 1rem;
 }
 
 main > article + article {
-  margin-top: 50px;
+  margin-top: 3rem;
 }
 
 #experience {
-  border-top: 2px #3c3c3c solid;
+  border-top: 0.125rem #3c3c3c solid;
 }
 
 #skills {
-  border-top: 2px #3c3c3c solid;
+  border-top: 0.125rem #3c3c3c solid;
 }
 
 #contact {
-  border-top: 2px #3c3c3c solid;
+  border-top: 0.125rem #3c3c3c solid;
 }
 
 #contact a {
