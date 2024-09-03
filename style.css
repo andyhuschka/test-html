@@ -1,4 +1,6 @@
-* {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
@@ -56,27 +58,27 @@ main > article + article {
   margin-top: 50px;
 }
 
-#Experience {
+#experience {
   border-top: 2px #3c3c3c solid;
 }
 
-#Skills {
+#skills {
   border-top: 2px #3c3c3c solid;
 }
 
-#Contact {
+#contact {
   border-top: 2px #3c3c3c solid;
 }
 
-#Contact a {
+#contact a {
   color: green;
 }
 
-#Contact a:hover {
+#contact a:hover {
   color: #f0a04b;
 }
 
-#Contact a:active {
+#contact a:active {
   color: blue;
 }
 
