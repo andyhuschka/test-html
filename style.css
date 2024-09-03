@@ -19,6 +19,7 @@ h3 {
 }
 
 header {
+  display: block;
   text-align: center;
   background-color: #fefbe9;
   padding: 20px 20px;
@@ -45,6 +46,7 @@ header p::after {
 }
 
 main {
+  display: block;
   max-width: 800px;
   margin: 0 auto;
   padding: 16px;
