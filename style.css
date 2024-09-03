@@ -23,6 +23,7 @@ h3 {
 header {
   display: block;
   text-align: center;
+  font-weight: bold;
   background-color: #fefbe9;
   padding: 20px 20px;
 }
@@ -32,7 +33,7 @@ header > a + a {
 }
 
 header > a {
-  color: green;
+  color: #183a1d;
 }
 
 header > a:hover {
@@ -45,6 +46,23 @@ header > a:active {
 
 header p::after {
   content: " 💻";
+}
+
+.hire-me-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #183a1d;
+  color: #e1eedd;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.hire-me-badge:hover {
+  color: #e1eedd;
+  background-color: #f0a04b;
 }
 
 main {
@@ -71,7 +89,8 @@ main > article + article {
 }
 
 #contact a {
-  color: green;
+  font-weight: bold;
+  color: #183a1d;
 }
 
 #contact a:hover {
