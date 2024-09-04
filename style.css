@@ -89,7 +89,7 @@ header p::after {
 
 main {
   display: block;
-  max-width: 50rem;
+  max-width: 60ch;
   margin: 0 auto;
   padding: 1rem;
 }
