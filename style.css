@@ -54,15 +54,15 @@ header > a + a {
   font-size: 0.25em;
 }
 
-header > a {
+header div > a {
   color: #183a1d;
 }
 
-header > a:hover {
+header div > a:hover {
   color: #f0a04b;
 }
 
-header > a:active {
+header div > a:active {
   color: blue;
 }
 
