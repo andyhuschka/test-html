@@ -130,3 +130,10 @@ main > article + article {
 .experience-subheading {
   display: inline-block;
 }
+
+@media print {
+  header a,
+  .hire-me-badge {
+    display: none;
+  }
+}
