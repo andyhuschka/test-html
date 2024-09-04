@@ -142,12 +142,40 @@ main > article + article {
   color: blue;
 }
 
-.experience-heading {
+.experience-subheading {
   display: inline-block;
 }
 
-.experience-subheading {
-  display: inline-block;
+.experience-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.experience-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.job-title {
+  font-weight: bold;
+}
+
+.job-time {
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .experience-heading {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .job-time {
+    margin-top: 0;
+    margin-left: auto;
+  }
 }
 
 @media (min-width: 786px) {
