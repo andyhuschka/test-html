@@ -42,6 +42,18 @@ header > a + a {
   margin-left: 1rem;
 }
 
+.header-title {
+  font-size: 3rem;
+}
+
+.header-title h1 {
+  font-size: 1em;
+}
+
+.header-title p {
+  font-size: 0.25em;
+}
+
 header > a {
   color: #183a1d;
 }
