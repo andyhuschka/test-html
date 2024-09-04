@@ -71,7 +71,7 @@ header p::after {
 }
 
 .hire-me-badge {
-  position: absolute;
+  position: fixed;
   top: 0.6rem;
   right: 0.6rem;
   background-color: #183a1d;
@@ -129,6 +129,18 @@ main > article + article {
 
 .experience-subheading {
   display: inline-block;
+}
+
+@media (min-width: 786px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 992px) {
+  body {
+    font-size: 20px;
+  }
 }
 
 @media print {
