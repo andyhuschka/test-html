@@ -6,11 +6,15 @@
 
 html {
   font-size: 16px;
-  color: #3c3c3c;
+  --text-color: #3c3c3c;
+  --head-color: whitesmoke;
+  --theme-color: whitesmoke;
+  --company-color: #183a1d;
+  --company-color-2: #fefbe9;
 }
 
 body {
-  background-color: whitesmoke;
+  background-color: var(--theme-color);
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
 }
@@ -37,14 +41,13 @@ header {
   display: block;
   text-align: center;
   font-weight: bold;
-  background: linear-gradient(90deg, #fefbe9, #183a1d);
+  background: linear-gradient(90deg, #fefbe9, var(--company-color));
   padding: 1.25rem 1.25rem;
-  color: whitesmoke;
 }
 
 header h1,
 header p {
-  color: white;
+  color: var(--head-color);
 }
 
 header > a + a {
@@ -64,7 +67,7 @@ header > a + a {
 }
 
 header div > a {
-  color: #183a1d;
+  color: var(--company-color);
   text-decoration: none;
 }
 
@@ -101,7 +104,7 @@ header p::after {
   position: fixed;
   top: 0.6rem;
   right: 0.6rem;
-  background-color: #183a1d;
+  background-color: var(--company-color);
   color: whitesmoke;
   padding: 0.75rem 1.25rem;
   text-decoration: none;
@@ -121,6 +124,8 @@ main {
   max-width: 60ch;
   margin: 0 auto;
   padding: 1rem;
+
+  color: var(--text-color);
 }
 
 main > article + article {
@@ -128,20 +133,20 @@ main > article + article {
 }
 
 #experience {
-  border-top: 0.125rem #183a1d solid;
+  border-top: 0.125rem var(--company-color) solid;
 }
 
 #skills {
-  border-top: 0.125rem #183a1d solid;
+  border-top: 0.125rem var(--company-color) solid;
 }
 
 #contact {
-  border-top: 0.125rem #183a1d solid;
+  border-top: 0.125rem var(--company-color) solid;
 }
 
 #contact a {
   font-weight: bold;
-  color: #183a1d;
+  color: var(--company-color);
   text-decoration: none;
 }
 
@@ -213,7 +218,7 @@ main > article + article {
 footer {
   text-align: center;
   padding: 1.5rem;
-  background: linear-gradient(90deg, #183a1d, #fefbe9);
+  background: linear-gradient(90deg, var(--company-color), #fefbe9);
   color: whitesmoke;
 }
 
@@ -222,7 +227,7 @@ footer p {
 }
 
 footer a {
-  color: #183a1d;
+  color: var(--company-color);
   text-decoration: none;
   font-weight: bold;
 }
