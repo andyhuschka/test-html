@@ -209,30 +209,3 @@ main > article + article {
 }
 
 /* FOOTER */
-
-footer {
-  background-color: #fefbe9;
-  padding: 1rem;
-  color: #3c3c3c;
-  font-weight: bold;
-}
-
-.footer-container {
-  display: flex;
-  justify-content: space-between;
-}
-
-.footer-box {
-  background-color: lightgray;
-  padding: 1rem;
-  margin: 0.5rem;
-  flex: 1;
-  min-width: 200px;
-  text-align: center;
-}
-
-.footer-box p a {
-  font-weight: bold;
-  color: #183a1d;
-  text-decoration: none;
-}
