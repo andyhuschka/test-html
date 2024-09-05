@@ -11,6 +11,7 @@ html {
   --theme-color: whitesmoke;
   --company-color: #183a1d;
   --company-color-2: #fefbe9;
+  --company-color-3: #f0a04b;
 }
 
 body {
@@ -79,7 +80,7 @@ header div > a {
 }
 
 header div > a:hover {
-  color: #f0a04b;
+  color: var(--company-color-3);
 }
 
 header div > a:active {
@@ -112,7 +113,7 @@ header p::after {
   top: 0.6rem;
   right: 0.6rem;
   background-color: var(--company-color);
-  color: whitesmoke;
+  color: var(--head-color);
   padding: 0.75rem 1.25rem;
   text-decoration: none;
   border-radius: 0.3rem;
@@ -121,7 +122,7 @@ header p::after {
 
 .hire-me-badge:hover {
   color: #e1eedd;
-  background-color: #f0a04b;
+  background-color: var(--company-color-3);
 }
 
 /* MAIN-CONTENT */
@@ -158,7 +159,7 @@ main > article + article {
 }
 
 #contact a:hover {
-  color: #f0a04b;
+  color: var(--company-color-3);
 }
 
 #contact a:active {
@@ -237,7 +238,7 @@ footer {
     var(--company-color),
     var(--company-color-2)
   );
-  color: whitesmoke;
+  color: var(--head-color);
 }
 
 footer p {
@@ -251,5 +252,5 @@ footer a {
 }
 
 footer a:hover {
-  color: #f0a04b;
+  color: var(--company-color-3);
 }
