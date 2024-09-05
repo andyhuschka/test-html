@@ -17,6 +17,9 @@ body {
   background-color: var(--theme-color);
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
+
+  --page-background-color: white;
+  --page-text-color: black;
 }
 
 h1,
@@ -41,7 +44,11 @@ header {
   display: block;
   text-align: center;
   font-weight: bold;
-  background: linear-gradient(90deg, #fefbe9, var(--company-color));
+  background: linear-gradient(
+    90deg,
+    var(--company-color-2),
+    var(--company-color)
+  );
   padding: 1.25rem 1.25rem;
 }
 
@@ -213,12 +220,23 @@ main > article + article {
   }
 }
 
+@media screen and (prefers-color-scheme: dark) {
+  body {
+    --page-background-color: black;
+    --page-text-color: white;
+  }
+}
+
 /* FOOTER */
 
 footer {
   text-align: center;
   padding: 1.5rem;
-  background: linear-gradient(90deg, var(--company-color), #fefbe9);
+  background: linear-gradient(
+    90deg,
+    var(--company-color),
+    var(--company-color-2)
+  );
   color: whitesmoke;
 }
 
