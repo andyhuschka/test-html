@@ -37,8 +37,14 @@ header {
   display: block;
   text-align: center;
   font-weight: bold;
-  background-color: #fefbe9;
+  background: linear-gradient(90deg, #fefbe9, #183a1d);
   padding: 1.25rem 1.25rem;
+  color: whitesmoke;
+}
+
+header h1,
+header p {
+  color: white;
 }
 
 header > a + a {
@@ -59,6 +65,7 @@ header > a + a {
 
 header div > a {
   color: #183a1d;
+  text-decoration: none;
 }
 
 header div > a:hover {
@@ -95,7 +102,7 @@ header p::after {
   top: 0.6rem;
   right: 0.6rem;
   background-color: #183a1d;
-  color: #e1eedd;
+  color: whitesmoke;
   padding: 0.75rem 1.25rem;
   text-decoration: none;
   border-radius: 0.3rem;
@@ -135,6 +142,7 @@ main > article + article {
 #contact a {
   font-weight: bold;
   color: #183a1d;
+  text-decoration: none;
 }
 
 #contact a:hover {
@@ -221,4 +229,10 @@ footer {
   flex: 1;
   min-width: 200px;
   text-align: center;
+}
+
+.footer-box p a {
+  font-weight: bold;
+  color: #183a1d;
+  text-decoration: none;
 }
