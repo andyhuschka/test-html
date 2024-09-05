@@ -128,15 +128,15 @@ main > article + article {
 }
 
 #experience {
-  border-top: 0.125rem #3c3c3c solid;
+  border-top: 0.125rem #183a1d solid;
 }
 
 #skills {
-  border-top: 0.125rem #3c3c3c solid;
+  border-top: 0.125rem #183a1d solid;
 }
 
 #contact {
-  border-top: 0.125rem #3c3c3c solid;
+  border-top: 0.125rem #183a1d solid;
 }
 
 #contact a {
@@ -209,3 +209,24 @@ main > article + article {
 }
 
 /* FOOTER */
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: linear-gradient(90deg, #183a1d, #fefbe9);
+  color: whitesmoke;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
+  color: #183a1d;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  color: #f0a04b;
+}
