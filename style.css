@@ -110,14 +110,13 @@ header p::after {
 /* NAVIGATION */
 
 .header-navi {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 1rem;
 }
 
 @media (min-width: 768px) {
   .header-navi {
-    flex-direction: row;
+    grid-template-columns: repeat(5, auto);
     justify-content: center;
   }
 }
@@ -194,14 +193,13 @@ main > article + article {
 }
 
 .experience-item {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  gap: 1rem;
 }
 
 .experience-heading {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  display: grid;
+  gap: 0.5rem;
 }
 
 .job-title {
@@ -215,12 +213,11 @@ main > article + article {
 
 @media (min-width: 768px) {
   .experience-heading {
-    flex-direction: row;
+    grid-template-columns: auto 1fr;
     align-items: center;
   }
 
   .job-time {
-    margin-top: 0;
     margin-left: auto;
   }
 }
@@ -254,7 +251,8 @@ main > article + article {
 /* FOOTER */
 
 footer {
-  text-align: center;
+  display: grid;
+  justify-items: center;
   padding: 1.5rem;
   background: linear-gradient(
     90deg,
