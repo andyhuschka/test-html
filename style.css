@@ -119,17 +119,24 @@ header p::after {
 .hire-me-badge {
   position: fixed;
   top: 0.6rem;
-  right: 0.6rem;
+  right: 1rem;
   background-color: var(--company-color);
   color: var(--head-color);
   padding: 0.75rem 1.25rem;
   text-decoration: none;
   border-radius: 0.3rem;
   font-weight: bold;
+  transition: transform 0.3s ease;
+  transform: scale(1);
+}
+
+header:hover .hire-me-badge,
+header:focus-within .hire-me-badge {
+  transform: scale(1.2);
 }
 
 .hire-me-badge:hover {
-  color: #e1eedd;
+  color: var(--company-color);
   background-color: var(--company-color-3);
 }
 
