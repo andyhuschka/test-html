@@ -77,14 +77,22 @@ header > a + a {
 header div > a {
   color: var(--company-color);
   text-decoration: none;
+  background-color: transparent;
+  padding: 0.5rem;
+  transition: background-color 0.3s ease, color 0.3s ease,
+    border-radius 0.3s ease;
+  border-radius: 0;
 }
 
-header div > a:hover {
-  color: var(--company-color-3);
+header div > a:hover,
+header div > a:focus {
+  background-color: var(--company-color-3);
+  color: var(--head-color);
+  border-radius: 12px;
 }
 
 header div > a:active {
-  color: blue;
+  color: var(--company-color);
 }
 
 header p::after {
