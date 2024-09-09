@@ -75,11 +75,11 @@ header > a + a {
 }
 
 .header-title h1 {
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 .header-title p {
-  font-size: 0.25em;
+  font-size: 0.25rem;
 }
 
 header div > a {
@@ -96,7 +96,7 @@ header div > a:hover,
 header div > a:focus {
   background-color: var(--company-color-3);
   color: var(--head-color);
-  border-radius: 12px; /* check */
+  border-radius: 0.75rem;
 }
 
 header div > a:active {
@@ -127,7 +127,7 @@ header p::after {
   position: fixed;
   top: 0.6rem;
   right: 1rem;
-  background-color: var(--company-color);
+  background-color: #183a1d;
   color: var(--head-color);
   padding: 0.75rem 1.25rem;
   text-decoration: none;
