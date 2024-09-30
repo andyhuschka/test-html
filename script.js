@@ -5,14 +5,11 @@ let isLightOn = true;
 
 lightSwitchButton.addEventListener("click", function () {
   if (isLightOn) {
-    body.style.backgroundColor = "#2c3e50";
-    document.title = "Good Night";
     body.classList.add("dark-mode");
+    document.title = "Good Night";
   } else {
-    body.style.backgroundColor = "whitesmoke";
-    document.title = "Good Morning";
     body.classList.remove("dark-mode");
+    document.title = "Good Morning";
   }
-
   isLightOn = !isLightOn;
 });

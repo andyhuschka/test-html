@@ -298,3 +298,48 @@ footer a:hover {
 body.dark-mode .light-switch {
   box-shadow: 0 0 15px yellow;
 }
+
+body.dark-mode {
+  --page-background-color: #2c3e50;
+  --page-text-color: whitesmoke;
+  background-color: var(--page-background-color);
+  color: var(--page-text-color);
+}
+
+body.dark-mode header,
+body.dark-mode main,
+body.dark-mode footer {
+  background-color: #34495e;
+  color: var(--page-text-color);
+}
+
+body.dark-mode a {
+  color: #f1c40f;
+}
+
+body.dark-mode a:hover {
+  color: #f39c12;
+}
+
+.light-switch {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  padding: 0.75rem 1.25rem;
+  background-color: var(--company-color);
+  color: var(--head-color);
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  transition: background-color 0.5s ease, box-shadow 0.5s ease;
+}
+
+.light-switch:hover {
+  background-color: var(--company-color-3);
+}
+
+body.dark-mode .light-switch {
+  box-shadow: 0 0 15px yellow;
+}
