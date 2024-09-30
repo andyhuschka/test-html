@@ -29,6 +29,8 @@ body {
 
   --page-background-color: white;
   --page-text-color: black;
+
+  transition: background-color 0.5s ease;
 }
 
 h1,
