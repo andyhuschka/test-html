@@ -1,14 +1,18 @@
-function toggleLight() {
-  const body = document.body;
-  const lightSwitchButton = document.getElementById("lightSwitch");
+const lightSwitchButton = document.getElementById("light-switch");
+const body = document.body;
 
-  if (body.style.backgroundColor === "black") {
-    body.style.backgroundColor = "white";
-    document.title = "Good Morning";
-    lightSwitchButton.textContent = "Turn Off Light";
-  } else {
-    body.style.backgroundColor = "black";
+let isLightOn = true;
+
+lightSwitchButton.addEventListener("click", function () {
+  if (isLightOn) {
+    body.style.backgroundColor = "#2c3e50";
     document.title = "Good Night";
-    lightSwitchButton.textContent = "Turn On Light";
+    body.classList.add("dark-mode");
+  } else {
+    body.style.backgroundColor = "whitesmoke";
+    document.title = "Good Morning";
+    body.classList.remove("dark-mode");
   }
-}
+
+  isLightOn = !isLightOn;
+});

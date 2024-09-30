@@ -29,8 +29,6 @@ body {
 
   --page-background-color: white;
   --page-text-color: black;
-
-  transition: background-color 0.5s ease;
 }
 
 h1,
@@ -276,4 +274,27 @@ footer a {
 
 footer a:hover {
   color: var(--company-color-3);
+}
+
+.light-switch {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  padding: 0.75rem 1.25rem;
+  background-color: var(--company-color);
+  color: var(--head-color);
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  transition: background-color 0.5s ease, box-shadow 0.5s ease;
+}
+
+.light-switch:hover {
+  background-color: var(--company-color-3);
+}
+
+body.dark-mode .light-switch {
+  box-shadow: 0 0 15px yellow;
 }
